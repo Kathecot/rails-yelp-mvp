@@ -220,7 +220,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   sass-rails (>= 6)
-  simple_form (~> 5.1)
+  simple_form
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
