@@ -1,5 +1,13 @@
 <h1>Crea un nuevo review</h1>
 
+<% if @review.errors.any %>
+  <ul>
+    <% @review.errors.full_messages. each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <% simple_form_for [@restaurant, @review] do |f| %>
   <%= f.input :content, as: :text %>
   <%= f.submit %>
